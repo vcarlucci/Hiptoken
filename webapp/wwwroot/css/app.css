@@ -75,7 +75,7 @@ a, .btn-link {
 
     .loading-progress circle {
         fill: none;
-        stroke: #00c6ff;
+        stroke: #e0e0e0;
         stroke-width: 2px;
         transform-origin: 50% 50%;
         transform: rotate(-90deg);
