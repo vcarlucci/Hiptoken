@@ -17,14 +17,14 @@ jobs:
       - name: Setup .NET SDK 8.0.x
         uses: actions/setup-dotnet@v1
         with:
-          dotnet-version: "5.0.x"
+          dotnet-version: "8.0.x"
 
       # publishes Blazor project to the release folder
       - name: Publish .NET Project
-        run: dotnet publish BlazorGitHubPagesDemo.csproj -c Release -o release --nologo
+        run: dotnet publish Hiptoken.csproj -c Release -o release --nologo
 
       # changes the base-tag in index.html from '/' to 'BlazorGitHubPagesDemo' to match GitHub Pages repository subdirectory
-      - name: Change base-tag in index.html from / to BlazorGitHubPagesDemo
+      - name: Change base-tag in index.html from / to Hiptoken
         run: sed -i 's/<base href="\/" \/>/<base href="\/Hiptoken\/" \/>/g' release/wwwroot/index.html
 
       # copy index.html to 404.html to serve the same file when a file is not found
@@ -37,7 +37,7 @@ jobs:
 
       # publishes wwwroot directory to GitHub Pages
       - name: Commit wwwroot to GitHub Pages
-        uses: JamesIves/github-pages-deploy-action@4.1.5
+        uses: vcarlucci/github-pages-deploy-action@4.1.5
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
           branch: gh-pages # The branch the action should deploy to.
