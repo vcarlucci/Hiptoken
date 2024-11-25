@@ -1,7 +1,7 @@
 {
   "mainAssemblyName": "Hiptoken",
   "resources": {
-    "hash": "sha256-yJWA1PQ4UKAxLOZXXb1jgjTCF6QK2cWH9rnXNgxG0iM=",
+    "hash": "sha256-LJROIoxZ3ngv2DJn0GOa8G9tNRccHxDbsqwxDBYHlhI=",
     "jsModuleNative": {
       "dotnet.native.8.0.11.n1sf6xr5tz.js": "sha256-VdKq87/z5NIxZKmuM+fv38XF+RcEb/bg3jVBwQSfwP4="
     },
@@ -17,7 +17,7 @@
       "icudt_no_CJK.dat": "sha256-L7sV7NEYP37/Qr2FPCePo5cJqRgTXRwGHuwF5Q+0Nfs="
     },
     "assembly": {
-      "Hiptoken.wasm": "sha256-2BoUoBsTm31fRZp/iIxPyt1+lTO+83WRbP73kvJQbEU=",
+      "Hiptoken.wasm": "sha256-6Mj51bmHPF73DgJsEh8/M19x72uju42RUNATlDAl668=",
       "Microsoft.AspNetCore.Components.wasm": "sha256-klrBNbsLiNykqIl809GC7/Y2dKIb12ad30wpJHnuoRU=",
       "Microsoft.AspNetCore.Components.Web.wasm": "sha256-VnMUskpCPmW1fX4qZihu4ZyOPWe/cSBWh229O8+OZxU=",
       "Microsoft.AspNetCore.Components.WebAssembly.wasm": "sha256-9pa4TX6FPCR8IZ3hObhj8D/J0Rp+4PZ1bfCK0WQAIZ8=",
