@@ -37,7 +37,7 @@ jobs:
 
       # publishes wwwroot directory to GitHub Pages
       - name: Commit wwwroot to GitHub Pages
-        uses: JamesIves/github-pages-deploy-action@4.6.9
+        uses: JamesIves/github-pages-deploy-action@62fec3add6773ec5dbbf18d2ee4260911aa35cf4
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
           branch: Hiptoken # The branch the action should deploy to.
