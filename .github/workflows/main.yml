@@ -15,7 +15,7 @@ jobs:
 
       # sets up .NET SDK 8.0.x (action origin: setup-dotnet@v1)
       - name: Setup .NET SDK 8.0.x
-        uses: actions/Setup .NET Core SDK@v4.1.0
+        uses: actions/setup-dotnet@v4.1.0
         with:
           dotnet-version: "8.0.x"
 
