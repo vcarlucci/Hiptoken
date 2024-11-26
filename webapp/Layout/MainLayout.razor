@@ -1,12 +1,13 @@
-﻿@inherits LayoutComponentBase
+﻿@inject IJSRuntime JS
+@inherits LayoutComponentBase
 <div class="page">
     @*<div class="sidebar">
     <NavMenu />
     </div> *@
 
     <main>
-        <div class="top-menu">         
-            <a href="mailto:v.carlucci@hotmail.com?subject=Hiptoken.com" target="_blank" class="contact-link">Buy Domain</a>
+        <div class="top-menu">
+            <button class="btn btn-primary" style="background-color:transparent;margin-right:10px;border-color:gray;" @onclick="Contact">Buy Domain</button>
         </div>
 
         <article class="content px-4">
@@ -38,3 +39,11 @@
             text-decoration: underline; /* Adds underline on hover, optional */
         }
 </style>
+
+
+@{
+     async Task Contact()
+    {
+        await JS.InvokeVoidAsync("openEmailExtended", "v.carlucci@hotmail.com", "Hiptoken.com");
+    }
+}
